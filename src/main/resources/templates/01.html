@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<div id="app">
+<input type="button" value="点击导出表格" class="but"/>
+
+    <form action="/alipay/pay" method="post">
+
+         <input value="300">
+        <button type="submit">tijiao</button>
+    </form>
+</div>
+</body>
+<script type="text/javascript">
+
+   $(function () {
+    $(".but").click(doGetExcel);
+   });
+function doGetExcel() {
+    var url="test/download";
+    location.href=url;
+}
+</script>
+</html>
